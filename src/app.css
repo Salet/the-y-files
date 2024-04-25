@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+hr {
+	@apply border-gray-300;
+}
+
+.button {
+	@apply flex rounded bg-rose-700 px-4 py-2 font-bold text-rose-50;
+}
+
+.ql-toolbar.ql-snow,
+.ql-container.ql-snow {
+	@apply border-gray-300;
+}
+
+.ql-editor {
+	@apply font-sans text-base;
+}
+
+[role='tooltip'] {
+	@apply invisible absolute left-1/2 top-full mt-2 whitespace-nowrap rounded bg-gray-100 px-3 py-2 text-sm;
+}
+
+[aria-describedby] {
+	@apply relative;
+}
+
+[aria-describedby]:hover [role='tooltip'],
+[aria-describedby]:focus [role='tooltip'] {
+	@apply visible;
+}
