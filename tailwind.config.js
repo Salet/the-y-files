@@ -9,7 +9,8 @@ export default {
 		),
 		extend: {
 			fontFamily: {
-				sans: ['Lato', ...defaultTheme.fontFamily.sans]
+				sans: ['Lato', ...defaultTheme.fontFamily.sans],
+				bebas: ['"Bebas Neue"']
 			}
 		}
 	},

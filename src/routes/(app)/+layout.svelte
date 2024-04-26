@@ -76,7 +76,8 @@
 			<img
 				src="https://api.dicebear.com/8.x/thumbs/svg?seed={$pubnub.getUUID()}"
 				alt="{titleize($pubnub.getUUID())} Avatar"
-				class="h-8 w-8 rounded-full border-[3px] border-gray-400"
+				class="h-8 w-8 rounded-full border-[3px]"
+				style="border-color: {hashStringToColor($pubnub.getUUID())}"
 			/>
 			<div role="tooltip" id="user-tooltip-{$pubnub.getUUID()}">
 				{titleize($pubnub.getUUID())} (You)

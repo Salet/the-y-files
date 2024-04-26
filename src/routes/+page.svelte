@@ -16,7 +16,6 @@
 
 	notificationsSubscription.addListener({
 		signal: (event: SignalEvent) => {
-			console.log('signal notification: ', event);
 			if (event.message === 'new-channel' || event.message === 'removed-channel') getAllFiles();
 		}
 	});
@@ -26,7 +25,6 @@
 	async function getAllFiles() {
 		const response = await $pubnub.objects.getAllChannelMetadata({ sort: { updated: 'desc' } });
 		files = response.data;
-		console.log('files: ', files);
 	}
 
 	async function removeFile(id: string) {

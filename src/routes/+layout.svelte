@@ -4,7 +4,12 @@
 
 <header class="bg-rose-50">
 	<div class="container mx-auto px-8 py-4">
-		<h1 class="text-5xl font-bold text-rose-700"><a href="/">The Y-Files</a></h1>
+		<h1 class="font-bebas relative text-4xl font-bold tracking-[0.3em] text-rose-700">
+			<a href="/">THE Y FILES</a>
+			<span
+				class="absolute left-[74px] top-[-6px] inline-block h-12 w-12 rounded-full border-2 border-rose-700 text-center"
+			></span>
+		</h1>
 	</div>
 </header>
 
